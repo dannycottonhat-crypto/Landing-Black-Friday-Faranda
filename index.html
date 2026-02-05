@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Valentín 2026 · Faranda Hotels España</title>
+  <meta name="description" content="Promociones de San Valentín 2026 en Faranda Hotels España. Elige hotel y reserva por teléfono o Instagram." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <nav class="nav">
+      <div class="brand">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Faranda Hotels España</span>
+      </div>
+      <a class="nav__cta" href="#ofertas">Ver ofertas</a>
+    </nav>
+
+    <div class="hero__content">
+      <p class="kicker">14 de febrero · Cupos limitados</p>
+      <h1>San Valentín 2026</h1>
+      <p class="sub">5 destinos · 10 planes (cenas + escapadas) · Reserva directa con el hotel</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#ofertas">Explorar ofertas</a>
+        <a class="btn btn--ghost" href="#privacidad">Privacidad y baja</a>
+      </div>
+
+      <div class="hero__note">
+        <strong>Importante:</strong> Para más información y reservas, contacta directamente con cada establecimiento.
+      </div>
+    </div>
+  </header>
+
+  <main id="ofertas" class="wrap">
+    <section class="section">
+      <h2>Elige tu hotel</h2>
+      <p class="section__lead">Haz clic en un hotel para ver sus planes y reservar por <strong>teléfono</strong> o por <strong>Instagram</strong>.</p>
+
+      <div class="grid" id="hotelGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+    <section class="section section--light" id="privacidad">
+      <h2>Información sobre comunicaciones y privacidad</h2>
+      <div class="legal">
+        <p><strong>Finalidad específica:</strong> usaremos tus datos únicamente para enviarte comunicaciones relacionadas con promociones del hotel, según el consentimiento otorgado.</p>
+        <p><strong>Derecho a darte de baja:</strong> si no deseas recibir más correos, puedes solicitarlo en cualquier momento (ver “Baja” abajo).</p>
+        <p><strong>Seguridad de la base de datos:</strong> la información se almacena de forma segura y solo el personal autorizado puede acceder a ella.</p>
+        <p><strong>Aviso de privacidad:</strong> consulta la política de privacidad del hotel para conocer qué datos se recogen, para qué se usan y cómo ejercer tus derechos (baja, modificación o eliminación).</p>
+
+        <div class="legal__cta">
+          <a class="btn btn--primary" href="mailto:marketing.es@farandahotels.com?subject=Baja%20comunicaciones%20San%20Valent%C3%ADn%202026">Baja (unsubscribe)</a>
+          <a class="btn btn--ghost" href="#" onclick="alert('Sustituye este enlace por la URL real de tu política de privacidad.'); return false;">Política de privacidad</a>
+        </div>
+
+        <p class="fineprint">* Recomendación: sustituye el email de “Baja” y el enlace de “Política de privacidad” por los definitivos de Faranda España / cada hotel.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Faranda Hotels España · Reserva directa con el establecimiento</p>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" aria-label="Cerrar" data-close="true">×</button>
+
+      <div class="modal__header">
+        <div class="modal__badge" id="modalCity">—</div>
+        <h3 id="modalTitle">Hotel</h3>
+        <p class="modal__subtitle" id="modalSubtitle">—</p>
+      </div>
+
+      <div class="modal__body">
+        <div class="offers" id="modalOffers"></div>
+
+        <div class="modal__actions">
+          <a class="btn btn--primary" id="callBtn" href="#">Llamar</a>
+          <a class="btn btn--ghost" id="igBtn" href="#" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+
+        <p class="modal__small">Al reservar, menciona: <strong>“Promo San Valentín Faranda”</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
